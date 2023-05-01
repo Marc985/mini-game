@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#container{
+    border: solid 2px black;
+    margin: 15vh auto;
+    position: relative;
+   overflow: hidden;
+    width: 1030px;
+    height: 475px
+    
+}
+#dino img{
+    width: 60px;
+    height: 70px;
+    
+}
+#dino{
+position: absolute;
+top: 270px;
+left: 3vw;
+}
+
+@keyframes persoAnimate {
+    0%{
+        top: 50px;
+    }
+    100%{
+        top: 270px;
+    }
+}
+.persoAnimation{
+    animation: persoAnimate 0.6s infinite;
+
+}
+#obstacle{
+    position: absolute;
+    left: 110%;
+    bottom: 155px;
+    width: 80px;
+    height: 50px;
+
+
+
+}
+#start{
+    text-align: center;
+    position: relative;
+    top: 20vh;
+    font-size: 60px;
+    color: orangered;
+}
+#obstacle img{
+    width: 90px;
+    height: 70px;
+
+}
+.obsAnimation{
+    animation: obs 2s linear infinite;
+    
+
+}
+@keyframes obs {
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: -10%;
+    }
+}
+
+#road{
+    width: 200%;
+    position: absolute;
+    bottom: 0%;
+    height: 155px;
+   
+}
+.roadAnimate{
+    animation:roadAnimation 3s infinite linear;
+    
+}
+@keyframes roadAnimation {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -75%;
+    }
+    
+}
+#cloud{
+    width: 200%;
+    position: absolute;
+    top: 0;
+    height: 7vh;
+    left: 110%;
+
+}
+.cloudAnimate{
+    animation: cloudAnimation 15s infinite linear;
+    
+}
+@keyframes cloudAnimation {
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: -150%;
+    }
+}
+#score{
+    position: absolute;
+    right: 5%;
+    top: 10vh;
+}
+#gameOver{
+    display: none;
+    text-align:center;
+    margin-top: 10%;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+
+}
+#pt{
+   
+
+    text-align:center;
+   position: relative;
+   top:5%;
+    font-size: 40px;
+
+}
+.restart{
+    position: relative;
+    top: 5%;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    color: black;
+}
